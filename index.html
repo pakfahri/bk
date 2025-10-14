@@ -199,6 +199,41 @@
             line-height: 1.5;
         }
 
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+        }
+
+        .footer-link {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .footer-text {
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 500;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 16px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .footer-link:hover .footer-text {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 5px;
@@ -362,6 +397,16 @@
             .feature-card p {
                 font-size: 0.7rem;
             }
+            
+            .footer {
+                margin-top: 10px;
+                padding: 10px 5px;
+            }
+            
+            .footer-text {
+                font-size: 0.75rem;
+                padding: 6px 12px;
+            }
         }
     </style>
 </head>
@@ -491,6 +536,12 @@
                 </div>
             </div>
         </div>
+        
+        <div class="footer">
+            <a href="https://pakfahri.github.io/profil/" target="_blank" rel="noopener noreferrer" class="footer-link">
+                <span class="footer-text">Fahri, S.Pd. | Guru Informatika | SMP N 2 Manggar</span>
+            </a>
+        </div>
     </div>
 
     <script>
@@ -524,5 +575,5 @@
             });
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98e601728300b5b8',t:'MTc2MDQzMzY3Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98e61ba845c48740',t:'MTc2MDQzNDc1MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
